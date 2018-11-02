@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>OAuth Login </title>
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <nav> 
+        <ul>
+            <% if (user) {%>
+            <li><a href="/auth/logout">LogOut</a></li>
+            <% } else { %>
+            <li><a href="/auth/login">Login</a></li>
+            <% } %>
+            <li active><a href="/">Homepage</a></li>
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+        </nav>
+        <header>
+           <h1>Welcome to SinWaves Profile</h1>
+           <h2>Hello <%= user.username%></h2>
+        </header>
+        <main>
+            <img src="<%=user.thumbnail%>" />
+            <div>
+                <p></p>
+            </div>
+            <p>Extra infromation</p>
+            <p> googleId: <%= user.googleid %><p>
+            <p> gender: <%= user.gender %></p>
+            <p> provider: <%= user.provider%></p>
+            <p> location: <%= user.lcoation %></p>
+        </main> 
+    </body>
+</html>

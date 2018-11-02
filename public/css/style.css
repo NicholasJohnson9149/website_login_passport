@@ -1,0 +1,82 @@
+body{
+    font-family: arial;
+    margin: 0;
+}
+nav{
+    background: #0c9fde;
+    padding: 20px 10px;
+}
+nav ul{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+nav a{
+    color: #fff;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.048);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+nav a{
+    color: #fff;
+    font-size: 18px;
+    background: rgba(255,255,255,0.2);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+/* mouse over link */
+nav li:hover {
+    color: rgba(72, 245, 205, 0.605);
+}
+
+/* selected link */
+nav li:active {
+    color: rgba(240, 104, 236, 0.406);
+}
+
+
+main, header{
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 10px;
+    color: #333;
+}
+.google-btn{
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background: #EA4335;
+}
+
+.facebook-btn{
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background: #3B5998;
+}
+
+.linkedin-btn{
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background: #0077b5;
+}
